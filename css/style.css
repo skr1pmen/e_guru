@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    margin-top: 57px;
+    height: 59px;
+}
+.logo{
+    font-family: 'Righteous', cursive;
+    float: left;
+    font-size: 24px;
+    vertical-align: bottom;
+}
+.navs{
+    text-align: center;
+    display: inline;
+    margin-left: 197px;
+}
+.nav{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 38px;
+}
+.nav:hover{
+    color: #ff5202;
+}
+.reg{
+    font-family: 'Roboto Mono', monospace;
+    float: right;
+    border: 1px solid black;
+    padding: 18px 46px;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.title_block{
+    font-family: 'Righteous', cursive;
+    font-size: 62px;
+    text-transform: uppercase;
+    max-width: 460px;
+}
+.text{
+    display: block;
+    margin-top: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    border-left: 1px solid;
+    padding-left: 16px;
+}
+.btn{
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid black;
+    padding: 18px 46px;
+    margin-top: 40px;
+}
+.hover_btn{
+    background: #ff5202;
+    border: 1px solid #ff5202;
+    color: #fff;
+}
+.welcome_block{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 130px;
+}
+.men{
+    /*width: 450px;*/
+    margin: 0 auto;
+}
