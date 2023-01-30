@@ -74,6 +74,52 @@ a{
     margin-top: 130px;
 }
 .men{
-    /*width: 450px;*/
     margin: 0 auto;
+}
+.about_us{
+    margin-top: 130px;
+    height: 330px;
+    background: #262543;
+    color: white;
+    padding: 35px 25px;
+    box-sizing: border-box;
+}
+.about_text{
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.about_text h3{
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.about_text span{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item > img{
+    width: 58px;
+    height: 58px;
+    margin-bottom: 25px;
+}
+.item{
+    position: relative;
+    top: 25%;
+}
+.item > h4{
+    font-size: 22px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 15px;
+}
+.item > span{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
 }
