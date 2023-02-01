@@ -12,17 +12,23 @@
 header{
     margin-top: 57px;
     height: 59px;
+    display: grid;
+    grid-template-areas: "logo nav reg";
 }
 .logo{
     font-family: 'Righteous', cursive;
     float: left;
     font-size: 24px;
     vertical-align: bottom;
+    grid-area: logo;
+    margin-top: 13px;
 }
 .navs{
     text-align: center;
-    display: inline;
+    display: block;
     margin-left: 197px;
+    grid-area: nav;
+    margin-top: 17px;
 }
 .nav{
     font-family: 'Roboto Mono', monospace;
@@ -37,6 +43,8 @@ header{
     border: 1px solid black;
     padding: 18px 46px;
     vertical-align: bottom;
+    grid-area: reg;
+    width: max-content;
 }
 a{
     text-decoration: none;
@@ -122,4 +130,38 @@ a{
 .item > span{
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
+}
+.menu{
+    display: none;
+    grid-area: menu;
+    width: 52px;
+}
+
+@media screen and (max-width: 1250px) {
+    .container{
+        width: 900px;
+    }
+    header{
+        grid-template-areas: "menu logo reg";
+    }
+    .menu{
+        display: flex;
+    }
+    .navs{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+    .reg{
+        position: absolute;
+        right: 1%;
+    }
+    .welcome_block{
+        grid-template-columns: 1fr;
+    }
+    .title{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
